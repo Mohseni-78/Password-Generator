@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <script src="./styles/script.js" defer></script>
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="form">
+            <input type="text" readonly placeholder="Password here" name="password" class="password">
+            <div class="input-group">
+                <label for="length">Password length</label>
+                <input type="number" min="8" max="30" value="10" id="length" name="length">
+            </div>
+            <div class="input-group">
+                <label for="uppercase">Contain uppercase letters</label>
+                <input type="checkbox" id="uppercase" name="uppercase" class="check-box">
+            </div>
+            <div class="input-group">
+                <label for="lowercase">Contain lowercase letters</label>
+                <input type="checkbox" id="lowercase" name="lowercase" class="check-box">
+            </div>
+            <div class="input-group">
+                <label for="numbers">Contain numbers</label>
+                <input type="checkbox" id="numbers" name="numbers" class="check-box">
+            </div>
+            <div class="input-group">
+                <label for="symbol">Contain symbol </label>
+                <input type="checkbox" id="symbol" name="symbol" class="check-box">
+            </div>
+            <button type="submit" class="btn">Generate Password</button>
+        </form>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>
